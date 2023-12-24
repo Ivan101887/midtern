@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+.flex {
+  display: flex;
+  &-col {
+    flex-direction: column;
+  }
+  &.gap-2 {
+    gap:4px;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+}
+
+.text {
+  &-sm {
+    font-size: 0.875rem;
+  }
+  &-md {
+    font-size: 1rem;
+  }
+  &-lg {
+    font-size: 1.5rem;
+  }
+  &-xl {
+    font-size: 2rem;
+  }
+  &-secondary {
+    color: #4472C5;
+  }
+  &-pink {
+    color: #e45970;
+  }
+  &-highlight {
+    color: #886622
+  }
+  &-bold {
+    font-weight: 600;
+  }
+}
+.btn {
+  border-radius: 4px;
+}
+.link {
+  color: #eee;
+  text-decoration: underline;
+  &:hover {
+    color: rgb(96, 231, 238);
+  }
+  &:active {
+    color: #e94949;
+  }
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 800px;
+  height: 1200px;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  border-radius: 8px;
+  padding: 8px;
+  &-header {
+    flex: 1 1 auto;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    padding: 8px;
+    background-color: #34495e;
+    border-radius: 4px;
+    &__title {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 2px;
+    }
+    &__background {
+      color: white;
+    }
+    &__blockName {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+  }
+  &-body {
+    flex: 1 1 auto;
+    border-radius: 4px;
+    height: 60%;
+    width: 100%;
+    background-color: #4472C5;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+  }
+  &-sidebarList {
+    position: relative;
+    border-radius: 4px;
+    width: 30%;
+    height: 100%;
+    background-color: #1abc9c;
+    padding: 16px;
+    &__blockName {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+    &__ls {
+      margin-left: 16px;
+    }
+  }
+  &-main {
+    position: relative;
+    border-radius: 4px;
+    width: 70%;
+    height: 100%;
+    background-color: #2ecc71;
+    &__blockName {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+  }
+  &-footer {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    flex: 1 1 auto;
+    background-color: #9b59b6;
+    border-radius: 4px;
+  }
+
+}
+

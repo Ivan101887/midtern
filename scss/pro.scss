@@ -1,0 +1,115 @@
+// Rest of your code goes here...
+@import "reset";
+@import "utils";
+.body {
+  background-color: #DBF1F1;
+}
+.container {
+  max-width: 1200px;
+}
+.nav {
+  background-color: darkcyan;
+  padding: 8px;
+}
+.header {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 391px;
+  background-image: url("../images/header_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.box {
+  height: 100%;
+  background-color: #02fce7cc;
+}
+.banner {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  bottom: -220px;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(2);
+  color: #fff;
+  text-align: center;
+}
+.content {
+  padding: {
+    top: 20px;
+  }
+}
+.title {
+  padding: 5px 10px;
+  height: 1.5em;
+  box-sizing: border-box;
+  line-height: 100%;
+  width: fit-content;
+  color: #fff;
+  background-color: #6668;
+  margin: {
+    left: 30px;
+  }
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.desc {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: {
+    left: 60px;
+    top: 15px;
+  };
+  margin-bottom: 16px;
+}
+.emphasis {
+  font-weight: 600;
+}
+.section {
+  background-color: #eee;
+  padding: 16px;
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__paragraph {
+    margin-bottom: px;
+    line-height: 1.5em;
+  }
+  &__subTitle {
+    margin-left: 1em;
+  }
+  &__list {
+    gap: 20px;
+  }
+  &__sub {
+    margin-left: 2em;
+    &List {
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+  }
+  &__content {
+    line-height: 1.5em;
+    & + & {
+      margin-bottom: 12px;
+    }
+  }
+}
+.item {
+  padding: 4px 6px;
+}
+.tag {
+  color: #fff;
+  background-color: #6668;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.footer {
+  padding: {
+    top: 16px;
+    bottom: 16px;
+  }
+}
+
